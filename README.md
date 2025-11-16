@@ -40,12 +40,6 @@ pip install --upgrade pip
 pip install torch numpy
 ```
 
-## 📥 Dataset
-
-Colocar el archivo:
-
-```
-data/ucf101_2d.pkl
 ```
 
 ## 🧩 Entrenamiento del Modelo
