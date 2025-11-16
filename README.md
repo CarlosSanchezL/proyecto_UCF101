@@ -40,7 +40,6 @@ pip install --upgrade pip
 pip install torch numpy
 ```
 
-```
 
 ## 🧩 Entrenamiento del Modelo
 
