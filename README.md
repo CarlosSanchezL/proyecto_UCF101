@@ -80,10 +80,24 @@ python src/train.py   --pkl_path data/ucf101_2d.pkl   --train_split train1   --v
 python src/predict_demo.py   --pkl_path data/ucf101_2d.pkl   --checkpoint ../checkpoints/best_lstm.pt   --model_type lstm   --split test1
 ```
 
-## 🧠 Modelos incluidos
+## 📊 Resultados
 
-✔️ MLP Baseline  
-✔️ LSTM (modelo principal)
+LSTM (modelo final): Accuracy ~ 0.79 – 0.80
+
+MLP baseline: Inferior, sin captura temporal
+
+Mejoras aplicadas: LSTM + clipping + weight decay
+
+Ejemplo de predicción real:
+
+```bash
+Sample 0 | True: 0 | Pred: 0
+Sample 1 | True: 0 | Pred: 0
+Sample 2 | True: 0 | Pred: 1
+Sample 3 | True: 0 | Pred: 1
+Sample 4 | True: 0 | Pred: 0
+
+```
 
 ## 👤 Autor
 
