@@ -121,18 +121,26 @@ pip install tqdm
 
 ## **1. MLP Baseline**
 ```bash
-python src/train.py   --pkl_path data/ucf101_2d.pkl   --train_split train1   --val_split test1   --test_split test2   --model_type mlp   --save_results
+python src/train.py --pkl_path data/ucf101_2d.pkl \
+  --train_split train1 --val_split test1 --test_split test2 \
+  --model_type mlp --tag baseline --save_results
+
 ```
 
 ## **2. LSTM Base**
 ```bash
-python src/train.py   --pkl_path data/ucf101_2d.pkl   --train_split train1   --val_split test1   --test_split test2   --model_type lstm   --save_results
+python src/train.py --pkl_path data/ucf101_2d.pkl \
+  --train_split train1 --val_split test1 --test_split test2 \
+  --model_type lstm --tag base --save_results
+
 ```
 
 ## **3. LSTM Mejorado (Clipping + Weight Decay)**
 ```bash
-python src/train.py   --pkl_path data/ucf101_2d.pkl   --train_split train1   --val_split test1   --test_split test2   --model_type lstm   --weight_scale 1e-4   --clip_grad 5.0   --save_results
-```
+python src/train.py --pkl_path data/ucf101_2d.pkl \
+  --train_split train1 --val_split test1 --test_split test2 \
+  --model_type lstm --tag mejorado \
+  --weight_decay 1e-4 --clip_grad 5.0 --save_results
 
 ---
 
