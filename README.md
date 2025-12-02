@@ -5,7 +5,7 @@ Incluye preprocesamiento, carga del dataset, modelos baseline y avanzados, entre
 
 ---
 
-## ✅ Cumplimiento de los puntos solicitados por el profesor
+## ✅ puntos a corregir solicitados por el profesor
 
 ### **1. Modelo de Deep Learning (Requerido)**
 - **Modelo principal:** LSTM  
@@ -46,7 +46,7 @@ El proyecto contiene:
 ---
 
 ### **4. Entrenamiento + Mejoras (Requisito del profesor)**
-Tu profesor pidió demostrar:
+me pidio mejorar:
 
 > “Evalúa el desempeño del modelo en su aproximación inicial y realiza ajustes para mejorar su desempeño.”
 
@@ -85,7 +85,7 @@ proyectoucf01/
 │   ├── train.py
 │   └── predict_demo.py
 │
-├── checkpoints/
+├── checkpoints/ #Se genera automaticamente
 │   ├── best_mlp.pt
 │   ├── best_lstm.pt
 │   ├── results_mlp.json
